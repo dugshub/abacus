@@ -1,0 +1,23 @@
+# swagger.yml
+
+openapi: 3.0.0
+
+servers:
+  - description: Abacus App
+    url: "/api"
+
+info:
+  title: "RP Flask REST API"
+  description: "An API about people and notes"
+  version: "1.0.0"
+
+paths:
+  /dimensions:
+    get:
+      operationId: "view.read_all"
+      tags:
+        - "Dimension"
+      summary: "Read all dimension tags"
+      responses:
+        "200":
+          description: "Successfully read all dimensions"

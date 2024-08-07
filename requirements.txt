@@ -1,0 +1,8 @@
+Flask
+python-dotenv
+sqlalchemy
+flask-sqlalchemy
+connexion[swagger-ui,flask]
+marshmallow
+flask-marshmallow
+Flask-Migrate
