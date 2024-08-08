@@ -1,4 +1,5 @@
 from flask import render_template
+from flask_marshmallow import Marshmallow
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
@@ -10,6 +11,7 @@ connex_app.add_api("swagger.yml")
 app = connex_app.app
 
 app.config.from_object(Config)
+
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 

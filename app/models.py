@@ -16,3 +16,14 @@ class Dimension(db.Model):
 
     def __repr__(self):
         return '<Dimension {}>'.format(self.name)
+
+#
+# class DimensionSchema(ma.SQLAlchemyAutoSchema):
+#     class Meta:
+#         model = Dimension
+#         load_instance = True
+#         sqla_session = db.session
+#
+#
+# dimension_schema = DimensionSchema()
+# dimensions_schema = DimensionSchema(many=True)
